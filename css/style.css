@@ -2,54 +2,49 @@
 nav {
     display: flex;
     height: 50px;
-    padding: 10px 5vw;
-    align-items: center;
-    justify-content: flex-end;
+    padding: 10px 5vw; /* Responsive horizontal padding */
+    align-items: center; /* Centers items vertically within the nav */
+    justify-content: flex-end; /* Aligns nav items to the right */
     /* box-sizing: border-box; */
 }
 
 nav ul li {
-    display: inline;
-    padding: 0 0 2px 0;
+    display: inline;/* Displays list items in a line */
+    padding: 0 0 2px 0;/* Bottom padding to separate from underline on active */
     
 }
 nav a {
-    text-decoration: none;
-    color: #666666; 
-    font-weight: 400;
-    padding: 10px 1.2vw;
-    font-size: 18px;
+    text-decoration: none; /* Removes underline from links */
+    color: #666666; /* Dimmed text color for nav links */
+    font-weight: 400; /* Default font weight */
+    padding: 10px 1.2vw; /* Responsive padding */
+    font-size: 18px; /* Larger font size for readability */
 }
-
-/* nav ul li:last-child > a {
-    padding-right: 0;
-} */
 
 nav ul li.current-page {
     border-bottom: 3px solid #C67B93;
 }
 
 nav ul li.current-page a {
-    font-weight: bolder;
+    font-weight: bolder; /* Makes the current page link bolder */
 }
 
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000; /* Ensures header stays on top of other content */
     background-color: rgba(255, 255, 255, 0.95); 
     box-shadow: 0 8px 15px -5px rgba(0, 0, 0, 0.1);;
 }
 
-/* Skil to the main content */
-
+/* Accessibility: Skip to Main Content Link */
 .skip-to-content-link {
     position: absolute;
     transform: translateY(-100%); /*moves the element vertically in the upward direction by 100% of the element's own height.*/
     height: 40px;
     padding: 10px;
     transition: transform 0.3s;
-    background: #C7511F;
+    background: #C7511F; /* Distinctive color for visibility */
     color: white;
     font-weight: bold;
     display: inline-flex; 
